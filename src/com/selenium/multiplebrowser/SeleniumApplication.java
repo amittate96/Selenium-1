@@ -1,21 +1,25 @@
 package com.selenium.multiplebrowser;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 
 public class SeleniumApplication {
 
 	public static void main(String[] args) throws InterruptedException {
-		//creating driver instance
-		WebDriver driver=Driver.getDriver("edge");
+		//setting driver property
+		
+		WebDriver driver=Driver.GetDriver("chrome");
 		
 		//maximize the window
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		
 		//open the URL
-		driver.get("https://www.google.com/");
-	
-		//close the driver
-		driver.close();
+		driver.get("https://google.com");
+
+		//close the browser
+	  // driver.close();
 
 	}
 
